@@ -1,10 +1,10 @@
-print('\n>>> A set is a collection which is unordered and unindexed <<<\n')
+# unordered, unindexed, unique, immutable
 
-print('\n--CRATION--')
+print('\n--CERATION--')
 my_set = set([1,5,4,3,2,2,3])
 print('my_set = {}'.format(my_set))
 
-print('\n--CRATION...--')
+print('\n--CERATION...--')
 my_set = {1,2,3,4,5,2,3}
 print('my_set = {}'.format(my_set))
 
@@ -26,6 +26,11 @@ print('after => {}'.format(my_set))
 print('\n--REMOVE--')
 print('before => {}'.format(my_set))
 my_set.remove(3)
+print('after => {}'.format(my_set))
+
+print('\n--SORT--')
+print('before => {}'.format(my_set))
+my_set = sorted(my_set)
 print('after => {}'.format(my_set))
 
 print('\n--INTERSECTION--')

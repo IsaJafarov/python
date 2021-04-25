@@ -1,4 +1,4 @@
-print('\n>>> A dictionary is a collection which is unordered, changeable and indexed <<<\n')
+#A dictionary is a collection which is unordered, changeable and indexed
 
 my_dict = {'company':'casper', 'CPU':'intel i7', 'number':900}
 

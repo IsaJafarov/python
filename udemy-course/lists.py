@@ -1,4 +1,4 @@
-print('\n>>> A list is a collection which is ordered and changeable <<<\n')
+# ordered, changeable
 
 my_list = ['nirvana', 'hp', 'dell', 10, 11.8, -6]
 

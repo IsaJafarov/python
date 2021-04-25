@@ -1,4 +1,4 @@
-print('\n>>> A tuple is a collection which is ordered and unchangeable <<<\n')
+# ordered, unchangeable
 
 my_tuple = (1,)
 print(my_tuple)
