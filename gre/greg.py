@@ -30,19 +30,25 @@ with open('/home/isa/Downloads/GRE - Greg.csv') as csv_file:
     print(f'Processed {line_count} lines.\n')
 
 count = 1
-
 while True:
-    vocab = vocabularies[random.randint(0, len(vocabularies))-1]
-    if wordOrDefinition.lower()=='w':
-        print(str(count) +") "+vocab.word)
-        choice = input()
-        print(vocab.definition+' - '+vocab.example)
-
-    elif wordOrDefinition.lower()=='d':
-        print(str(count) +") "+vocab.definition)
-        choice = input()
-        print(vocab.word+' - '+vocab.example)
+    random.shuffle(vocabularies)
     
-    count+=1
-    choice = input()
+    for vocab in vocabularies:
+        if wordOrDefinition.lower()=='w':
+                print(str(count) +") "+vocab.word)
+                choice = input()
+                print(vocab.definition+' - '+vocab.example)
+
+        elif wordOrDefinition.lower()=='d':
+            print(str(count) +") "+vocab.definition)
+            choice = input()
+            print(vocab.word+' - '+vocab.example)
+            
+        count+=1
+        choice = input()
+    
+    print('------THE END------')
+    if input('Quit (y or n): ')=='y':
+        quit()
+    
         
